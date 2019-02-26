@@ -1,0 +1,32 @@
+{
+  "name": "productivity-quotes",
+  "version": "1.0.0",
+  "author": "Anatol Marezhanyi @e1r0nd_crg",
+  "description": "",
+  "now": {
+    "dotenv": "variables.env.now"
+  },
+  "main": "start.js",
+  "scripts": {
+    "start": "node ./start.js",
+    "watch": "nodemon ./start.js --ignore public/",
+    "test": "mocha test",
+    "test-watch": "nodemon --exec \"mocha **/*.test.js\""
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "dotenv": "^6.2.0",
+    "es6-promisify": "^6.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.15",
+    "pug": "^2.0.3"
+  }
+}
